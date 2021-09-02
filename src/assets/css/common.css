@@ -1,0 +1,622 @@
+:root {
+  --hue-color: 250;
+  --big-font-size: 1.75rem;
+  --h1-font-size: 1.6rem;
+  --h2-font-size: 1.15rem;
+  --h3-font-size: 0.95rem;
+  --normal-font-size: 0.8rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.7rem;
+  --title-color: #000;
+  --text-color: #424242;
+  --text-color-light: #999;
+  --body-color: #f5f5f5;
+  --container-color: #fff;
+  --border-bottom-color: 1px solid rgb(174 174 174 / 20%);
+  --total-container-color: #4a4a4a;
+  --total-title-color: #fff;
+  --confirmed-color: #f87979;
+  --deaths-color: #bebebe;
+  --recovered-color: #459ef8;
+}
+
+/* ================= THEME ================= */
+
+.dark-theme {
+  --first-color-second: hsl(var(--hue-color), 30%, 8%);
+  --title-color: #f0f0f0;
+  --text-color: #cbcbcb;
+  --text-color-light: #808080;
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: #272525;
+  --container-color: #3b3939;
+  --total-container-color: #3e3e3e;
+  --total-title-color: #999;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.change-theme:hover {
+  color: var(--confirmed-color);
+  transition: 0.4s;
+}
+
+/* ================= COVID STATUS COLOR ================= */
+
+.confirmed {
+  color: var(--confirmed-color);
+}
+
+.deaths {
+  color: var(--deaths-color);
+}
+
+.recovered {
+  color: var(--recovered-color);
+}
+
+/* ================= APP ================= */
+
+.app {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.app-contents {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.7rem 1.5rem;
+}
+
+/* ================= BASE ================= */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 1rem 1.5rem 0;
+  line-height: 2.85rem;
+}
+
+section,
+article {
+  margin-bottom: 1.25rem;
+}
+
+footer {
+  padding-bottom: 3rem;
+}
+
+canvas {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+ion-icon {
+  margin-bottom: -1px;
+}
+
+/* ================= LAYOUT ================= */
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.country__container {
+  grid-template-columns: 0.6fr 1fr;
+}
+
+/* ================= SECTION TITLE/SUBTITLE  ================= */
+
+.section__title {
+  width: 100%;
+  min-width: max-content;
+  padding: 0.7rem 0.2rem;
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+.section__subtitle {
+  padding: 0.3rem 0.2rem;
+  margin-bottom: 1rem;
+  color: var(--text-color-light);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  align-items: center;
+}
+
+/* ================= LOGO  ================= */
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-left: 0.25rem;
+  color: var(--title-color);
+}
+
+/* ================= FOOTER  ================= */
+
+.footer__copy {
+  font-size: var(--small-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+}
+
+/* ================= TOTAL LIST ================= */
+
+.total__list {
+  width: 100%;
+  padding: 1.25rem 2rem;
+  margin-top: 0.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.11);
+  background-color: var(--total-container-color);
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.2rem;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.total__item {
+  display: block;
+}
+
+.total__title {
+  min-width: max-content;
+  text-align: center;
+  font-size: var(--small-font-size);
+  margin-bottom: 0.125rem;
+  opacity: 0.9;
+  color: var(--total-title-color);
+}
+
+.total__num {
+  font-size: var(--big-font-size);
+  font-weight: 600;
+}
+
+.total__num-new {
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+}
+
+/* ================= SEARCH INPUT ================= */
+
+.search__input {
+  display: flex;
+  align-items: center;
+  background: rgb(133 133 133 / 15%);
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.search__input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.7rem 0.2rem 0.6rem;
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+}
+
+.search__icon ion-icon {
+  display: inline-block;
+  margin: 12px 6px 6px 12px;
+}
+
+.search__icon {
+  color: #757575;
+}
+
+.search__active {
+  color: var(--title-color);
+}
+
+/* ================= RNKING FILTERS ================= */
+
+.ranking__filters {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ranking__filter {
+  display: inline-block;
+  width: max-content;
+  padding-right: 1rem;
+  margin-right: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ranking__filter:hover {
+  color: var(--text-color);
+}
+
+.rankiing__filter--selected {
+  color: var(--text-color);
+}
+
+.sort__icon {
+  display: inline-flex;
+  width: 12px;
+  height: 18px;
+  align-items: center;
+  position: absolute;
+  margin-left: 3px;
+  margin-right: 3px;
+  transition: 0.4s;
+}
+
+.sort__desc {
+  transform: rotate(-180deg);
+}
+
+/* ================= RNKING LIST ================= */
+
+.ranking__list {
+  height: 58vh;
+  background-color: var(--container-color);
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.11);
+}
+
+.ranking__item {
+  padding: 0.45rem 0.75rem 0.55rem;
+  width: 100%;
+  min-width: 383px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  border-bottom: var(--border-bottom-color);
+}
+
+.ranking__item:hover {
+  background-color: rgb(214 214 214 / 17%);
+}
+
+.ranking__item-index {
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  margin-right: 0.75rem;
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+}
+
+.ranking__item-country {
+  font-size: var(--normal-font-size);
+  margin-right: 0.75rem;
+}
+
+.ranking__item-num {
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+}
+
+.ranking__item-new {
+  font-size: var(--small-font-size);
+  font-weight: 600;
+  color: var(--confirmed-color);
+  margin-left: 0.3rem;
+}
+
+/* ================= CHART CONTENT ================= */
+
+.chart__content {
+  background: var(--container-color);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.11);
+  height: 58vh;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem 0rem;
+  overflow: hidden;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= CHART DAYS TABS ================= */
+
+.chart__days.grid {
+  gap: 0;
+}
+
+.chart__days {
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  height: 41px;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+  background-color: rgb(133 133 133 / 15%);
+}
+
+.chart__day {
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 0.5rem;
+  transition-duration: 0.6s;
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  color: var(--text-color-light);
+  transition: 0.4s;
+}
+
+.chart__day-selected {
+  background: var(--container-color);
+  color: var(--text-color);
+  box-shadow: 0px 0px 14px rgb(0 0 0 / 18%);
+}
+
+.chart__day:hover {
+  color: var(--text-color);
+}
+
+/* ================= TABLE ================= */
+
+.table .grid {
+  gap: 0.5rem;
+}
+
+.table {
+  background-color: var(--container-color);
+  width: 99%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--normal-font-size);
+}
+
+.table__thead {
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: var(--text-color) 2px solid;
+}
+
+.table__thead li {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  padding: 0.5rem 0.25rem;
+  font-weight: 600;
+}
+
+.table__thead__date {
+  cursor: pointer;
+}
+
+.table__tbody {
+  color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  overflow-y: auto;
+  padding-bottom: 0;
+}
+
+.table__tbody .tr {
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: var(--border-bottom-color);
+}
+
+.table__tbody .td {
+  padding: 0.6rem 0.25rem;
+}
+
+.tr:hover {
+  background-color: rgb(214 214 214 / 17%);
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+/* table__tbody size */
+@media screen and (min-width: 769px) {
+  .table__tbody {
+    height: 38.5vh;
+  }
+  .table__tbody .tr:last-child {
+    margin-bottom: 6vh;
+  }
+}
+
+@media screen and (min-width: 954px) {
+  .table__tbody {
+    height: 34.5vh;
+  }
+  .table__tbody .tr:last-child {
+    margin-bottom: 2vh;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .table__tbody {
+    height: 20vh;
+  }
+  .table__tbody .tr:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+  .app-contents {
+    padding: 0.5rem 1.25rem;
+  }
+  header {
+    padding: 1rem 1.25rem 0.25rem;
+    line-height: 2rem;
+  }
+  .grid {
+    gap: 0;
+  }
+  .logo,
+  .change-theme {
+    font-size: 1rem;
+  }
+  .total__list {
+    padding: 1rem;
+  }
+  .total__title,
+  .total__num-new {
+    font-size: var(--smaller-font-size);
+  }
+  .total__num {
+    font-size: var(--h2-font-size);
+    font-size: 1.3rem;
+  }
+  .ranking__list {
+    height: 265px;
+  }
+  .table__tbody {
+    height: 280px;
+  }
+  .country__container {
+    grid-template-columns: 1fr;
+  }
+  .section__title {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: var(--h3-font-size);
+  }
+  .ranking__item-index,
+  .ranking__item-country,
+  .ranking__item-num {
+    margin-right: 0.5rem;
+  }
+  .ranking__item-new {
+    margin-left: 0;
+  }
+  .chart__content {
+    padding: 1rem 1rem 0rem;
+    height: max-content;
+  }
+  .section__subtitle {
+    font-size: var(--small-font-size);
+    margin-bottom: 0.75rem;
+  }
+  .chart__days,
+  .search__input {
+    height: 38px;
+  }
+  .ranking__item-index,
+  .ranking__item-country,
+  .ranking__item-num,
+  .ranking__item-new,
+  .chart__day,
+  .table {
+    font-size: var(--small-font-size);
+  }
+  .ranking__item {
+    padding: 0.375rem;
+  }
+  .search__input input {
+    font-size: var(--small-font-size);
+    padding: 0.5rem 0.2rem 0.6rem;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 425px) {
+  .app {
+    font-size: 0.8rem;
+  }
+  .app-contents {
+    padding: 0.5rem 1rem;
+  }
+  header {
+    padding: 1rem 1rem 0.25rem;
+    line-height: 2rem;
+  }
+  section,
+  article {
+    margin-bottom: 1.5rem;
+  }
+  .logo,
+  .change-theme {
+    font-size: 0.975rem;
+  }
+  .total__list {
+    padding: 0.75rem 1rem;
+    column-gap: 0.5rem;
+  }
+  .total__title,
+  .total__num-new {
+    font-size: 0.5rem;
+  }
+  .total__num {
+    font-size: var(--h2-font-size);
+  }
+  .country__container {
+    grid-template-columns: 1fr;
+  }
+  .ranking__list {
+    height: 250px;
+  }
+  .section__title {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+  .section__subtitle {
+    margin-bottom: 0.7rem;
+  }
+  .ranking__item {
+    padding: 0.563rem;
+    min-width: 0;
+  }
+  .ranking__item-index {
+    margin-right: 0.5rem;
+    width: 21px;
+  }
+  .ranking__item-country {
+    margin-right: 0.5rem;
+  }
+  .ranking__item-new {
+    margin-left: 0;
+  }
+
+  .chart__content {
+    height: max-content;
+    padding: 0.75rem;
+  }
+  .table__tbody {
+    height: 262px;
+  }
+  .table__thead li {
+    padding: 0.5rem 0.1rem;
+  }
+  .search__input,
+  .chart__days {
+    height: 2.3125rem;
+  }
+  .search__input input {
+    padding: 0.5rem 0.2rem 0.4rem;
+  }
+  .search__icon ion-icon {
+    font-size: 13px;
+    margin: 13px 6px 6px 10px;
+  }
+}
