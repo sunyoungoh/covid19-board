@@ -8,3 +8,17 @@ https://sunyoungoh.github.io/covid19-board/
 
 ### ⚙️ OpenAPI
 https://api.covid19api.com/
+
+## 🎬 Demo Video
+**1. Responsive**
+- PC -> Tablet -> Mobile
+
+<img src="https://user-images.githubusercontent.com/52486921/236143830-11d52383-8312-4f7a-983f-6aa1ea38a9f6.GIF" width="400">
+
+- Mobile -> Tablet -> PC
+
+<img src="https://user-images.githubusercontent.com/52486921/236145403-24455d8d-4e0d-49b2-a73d-66bad5a48cef.GIF" width="400">
+
+**2. Light <-> Dark**
+
+<img src="https://user-images.githubusercontent.com/52486921/236140487-c0bd5c39-1675-455b-b6ef-bf8ac474b2d9.GIF" width="400">
