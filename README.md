@@ -30,15 +30,17 @@ https://sunyoungoh.github.io/covid19-board/
 
 <img src="https://user-images.githubusercontent.com/52486921/236153380-9526cf40-b6d1-4476-bf54-f295f0953538.GIF" width="400">
 
-**3. Chart.js Function**
+<img src="https://user-images.githubusercontent.com/52486921/236158688-a5f4740c-40e4-4ead-9f3a-350c54985b83.GIF" width="400">
+
+**4. Chart.js Function**
 
 <img src="https://user-images.githubusercontent.com/52486921/236154549-ffb326f8-2016-470a-b5fd-4e8b024a68c1.GIF" width="400">
 
-**4. Change Table Date Range**
+**5. Change Table Date Range**
 
 <img src="https://user-images.githubusercontent.com/52486921/236155532-39aba1c1-c1ff-42b2-aff8-daf1ddd81dc0.GIF" width="400">
 
-**5. Search Contry**
+**6. Search Contry**
 
 <img src="https://user-images.githubusercontent.com/52486921/236157647-11d20fa7-3ec4-42f1-a414-a95d6c678f4e.GIF" width="400">
 
