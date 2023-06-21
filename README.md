@@ -15,6 +15,17 @@ https://sunyoungoh.github.io/covid19-board/
 
 <br>
 
+## 🪄 Tech Stack
+* Vue3
+* TypeScript
+* Vuex
+* Vuetify
+* Chart.js
+<br>
+
+<br>
+
+<br>
 
 ## 🎬 Demo Video
 ### 🪄 Fucntion
