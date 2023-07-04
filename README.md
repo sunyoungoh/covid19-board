@@ -10,6 +10,8 @@ OpenAPI를 활용해 Covid19 데이터를 받아와 전세계, 국가별 현황�
 ## ✨ Live Demo (Responsive Web)
 https://sunyoungoh.github.io/covid19-board/
 <br>
+`오픈 API 중단으로 더 이상 데이터를 받아올 수 없습니다 😢`
+<br>
 
 <br>
 
