@@ -30,29 +30,29 @@ https://sunyoungoh.github.io/covid19-board/
 ## 🎬 Demo Video
 ### 🪄 Fucntion
 **1. Sort By Confirmed, Deaths, Recovered**
-
+> 확진자, 사망자, 회복자 순서별로 국가 랭킹 정렬 기능
 <img src="https://user-images.githubusercontent.com/52486921/236150881-595c01a3-a357-47a9-bf39-cafc467f164c.GIF" width="400">
 
 **2. Click Contry**
-
+> 국가 클릭
 <img src="https://user-images.githubusercontent.com/52486921/236152441-3b263279-79b4-4e3a-bb03-d1d96c167c73.GIF" width="400">
 
 **3. Sort By Date (Contry Chart Table)**
-
+> 차트 표 날짜 순서 오름차순, 내림차순 정렬 (1주)
 <img src="https://user-images.githubusercontent.com/52486921/236153380-9526cf40-b6d1-4476-bf54-f295f0953538.GIF" width="400">
-
+> 차트 표 날짜 순서 오름차순, 내림차순 정렬 (3주)
 <img src="https://user-images.githubusercontent.com/52486921/236158688-a5f4740c-40e4-4ead-9f3a-350c54985b83.GIF" width="400">
 
 **4. Chart.js Function**
-
+> Chart.js 기능
 <img src="https://user-images.githubusercontent.com/52486921/236154549-ffb326f8-2016-470a-b5fd-4e8b024a68c1.GIF" width="400">
 
 **5. Change Table Date Range**
-
+> Chart.js 표 기간 변경
 <img src="https://user-images.githubusercontent.com/52486921/236155532-39aba1c1-c1ff-42b2-aff8-daf1ddd81dc0.GIF" width="400">
 
 **6. Search Contry**
-
+> 국가 검색
 <img src="https://user-images.githubusercontent.com/52486921/236157647-11d20fa7-3ec4-42f1-a414-a95d6c678f4e.GIF" width="400">
 
 <br>
