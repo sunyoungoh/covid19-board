@@ -21,7 +21,6 @@ https://sunyoungoh.github.io/covid19-board/
 * Vue3
 * TypeScript
 * Vuex
-* Vuetify
 * Chart.js
 <br>
 
