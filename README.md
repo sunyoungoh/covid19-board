@@ -38,9 +38,9 @@ https://sunyoungoh.github.io/covid19-board/
 <img src="https://user-images.githubusercontent.com/52486921/236152441-3b263279-79b4-4e3a-bb03-d1d96c167c73.GIF" width="400">
 
 **3. Sort By Date (Contry Chart Table)**
-> 차트 표 날짜 순서 오름차순, 내림차순 정렬 (1주)
+> 차트 표 날짜 순서 오름차순, 내림차순 정렬
 <img src="https://user-images.githubusercontent.com/52486921/236153380-9526cf40-b6d1-4476-bf54-f295f0953538.GIF" width="400">
-> 차트 표 날짜 순서 오름차순, 내림차순 정렬 (3주)
+
 <img src="https://user-images.githubusercontent.com/52486921/236158688-a5f4740c-40e4-4ead-9f3a-350c54985b83.GIF" width="400">
 
 **4. Chart.js Function**
