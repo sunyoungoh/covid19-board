@@ -28,8 +28,7 @@ https://sunyoungoh.github.io/covid19-board/
 
 <br>
 
-## 🎬 Demo Video
-### 🪄 Fucntion
+## 🎬 Function
 **1. Sort By Confirmed, Deaths, Recovered**
 > 확진자, 사망자, 회복자별로 국가별 랭킹 오름차순, 내림차순 정렬 기능
 <img src="https://user-images.githubusercontent.com/52486921/236150881-595c01a3-a357-47a9-bf39-cafc467f164c.GIF" width="400">
