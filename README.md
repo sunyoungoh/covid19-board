@@ -67,7 +67,7 @@ https://sunyoungoh.github.io/covid19-board/
 
 **2. Theme**
 - Light <-> Dark
-- LocalStorage에 상태값 저장
+- Local Storage에 상태값 저장
 <img src="https://user-images.githubusercontent.com/52486921/236140487-c0bd5c39-1675-455b-b6ef-bf8ac474b2d9.GIF" width="400">
 
 <br>
